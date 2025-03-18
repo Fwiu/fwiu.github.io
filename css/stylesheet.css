@@ -92,14 +92,14 @@ nav ul li a{
     text-decoration: none;
 }
 .image-box img{
-    width: 565px;
-    max-height: 900px;
+    width: 525px;
+    max-height: 860px;
     display: block;
 }
 .image-box{
     position: absolute;
     bottom: 0;
-    right: 10%;
+    right: 12%;
 }
 .pattern{
     position: absolute;
@@ -115,6 +115,7 @@ nav ul li a{
     top: 0;
     left: 0;
     animation: move 1s linear infinite alternate-reverse;
+    border: 2px blue;
 }
 .pattern img:nth-child(1){
     transform: rotate(-45deg) translate(-70px, -50px);
@@ -124,6 +125,31 @@ nav ul li a{
     transform: rotate(65deg) translate(0px, -40px) scale(.8);
     animation-delay: 1.5s;
 }
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 140px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+.dropdown-content a{
+    background-color: #4864ff;
+    display: block;
+}
+
+
 
 
 @keyframes move{
